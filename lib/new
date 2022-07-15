@@ -1,0 +1,101 @@
+body: Container(
+        child: Container(
+          child: Stack(
+            alignment: Alignment.center,
+            children: [
+              Positioned(
+                top: 0,
+                height: 250,
+                width: 400,
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: Color.fromARGB(255, 214, 226, 106),
+                  ),
+                ),
+              ),
+              Positioned(
+                bottom: 350,
+                height: 100,
+                width: 100,
+                child: Center(
+                  child: Container(
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(color: Colors.white, width: 5),
+                      color: Color.fromARGB(255, 214, 226, 106),
+                    ),
+                    child: Image.asset(
+                      'man-removebg-preview.png',
+                      width: 75,
+                      height: 75,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      
+
+      ),
+
+
+       Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Icon(
+                      Icons.schedule,
+                      size: 40,
+                    ),
+                    Text("Schedule",
+                        style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.black,
+                            decoration: TextDecoration.none)),
+                    Icon(Icons.chevron_right),
+                  ],
+                ),
+
+
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      width: 75,
+                      height: 75,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(15),
+                        color: Color.fromARGB(255, 214, 226, 106),
+                      ),
+                      child: Image.asset(
+                        'man-removebg-preview.png',
+                        width: 20,
+                        height: 20,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(
+                        "Bio",
+                        style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.black,
+                            decoration: TextDecoration.none),
+                      ),
+                    ),
+                    Column(children: [
+                      Text(
+                      "Bio",
+                      style: TextStyle(
+                          fontSize: 12,
+                          color: Colors.black38,
+                          decoration: TextDecoration.none),
+                    ),
+                    Icon(Icons.chevron_right),
+                      
+                    ],)
+                    
+                  ],
+                ),
